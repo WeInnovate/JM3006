@@ -16,13 +16,5 @@
                            http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<bean id="car" class="com.wellnwill.jm3006.spring.di.di01.Car">
-		<constructor-arg ref="musicSystem2" />
-	</bean>
-
-	<bean id="musicSystem"
-		class="com.wellnwill.jm3006.spring.di.di01.SonyMusicSystem" />
-
-	<bean id="musicSystem2"
-		class="com.wellnwill.jm3006.spring.di.di01.PhilipsMusicSystem" />
+	<context:component-scan base-package="com.wellnwill.jm3006.spring.lessxml.ioc" />
 </beans>

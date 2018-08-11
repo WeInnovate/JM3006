@@ -17,7 +17,7 @@
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 	<bean id="car" class="com.wellnwill.jm3006.spring.di.di02.Car">
-		<property name="musicSystem" ref="myMusicSystem" />
+		<property name="musicSystem" ref="musicSystem2" />
 	</bean>
 
 	<bean id="myMusicSystem"

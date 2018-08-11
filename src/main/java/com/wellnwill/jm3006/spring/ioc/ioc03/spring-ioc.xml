@@ -16,13 +16,13 @@
                            http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<bean id="car" class="com.wellnwill.jm3006.spring.di.di01.Car">
-		<constructor-arg ref="musicSystem2" />
+	<bean id="car" class="com.wellnwill.jm3006.spring.ioc.ioc03.Car">
+		<constructor-arg name="modelNumber" value="10001" />
+		<constructor-arg name="name" value="BMW" />
+		<constructor-arg name="isAirBagsPresent" value="true" />
+
+		<!-- <constructor-arg value="BMW" index="1" /> <constructor-arg value="10001" 
+			index="0" /> <constructor-arg value="true" index="2" /> -->
+
 	</bean>
-
-	<bean id="musicSystem"
-		class="com.wellnwill.jm3006.spring.di.di01.SonyMusicSystem" />
-
-	<bean id="musicSystem2"
-		class="com.wellnwill.jm3006.spring.di.di01.PhilipsMusicSystem" />
 </beans>

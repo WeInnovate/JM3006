@@ -16,6 +16,6 @@
                            http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-	<bean id="car1" class="com.wellnwill.jm3006.spring.ioc.ioc02.Audi" />
-	<bean id="car" class="com.wellnwill.jm3006.spring.ioc.ioc02.Bmw" />
+	<bean id="car" class="com.wellnwill.jm3006.spring.ioc.ioc02.Audi" />
+	<bean id="car1" class="com.wellnwill.jm3006.spring.ioc.ioc02.Bmw" />
 </beans>
