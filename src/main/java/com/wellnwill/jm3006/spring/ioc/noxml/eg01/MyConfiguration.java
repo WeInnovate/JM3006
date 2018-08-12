@@ -1,4 +1,4 @@
-package com.wellnwill.jm3006.spring.ioc.noxml;
+package com.wellnwill.jm3006.spring.ioc.noxml.eg01;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
