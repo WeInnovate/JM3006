@@ -15,7 +15,20 @@
                            http://www.springframework.org/schema/tx/spring-tx.xsd
                            http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<!-- <bean id="car" class="com.wellnwill.jm3006.spring.spel.xml.Car">
+		<constructor-arg name="modelNumber" value="1001" />
+		<constructor-arg name="name" value="Audi" />
+		<constructor-arg name="isAirBags" value="true" />
+		<constructor-arg name="mileage" value="15.7" />
+	</bean> -->
 	
-<!-- <bean id="car" class="com.wellnwill.jm3006.spring.ioc.xml.ioc01.Car" scope="singleton" /> -->
-<bean id="car" class="com.wellnwill.jm3006.spring.ioc.xml.ioc01.Car" scope="prototype" />
+	<bean id="car" class="com.wellnwill.jm3006.spring.spel.xml.Car">
+		<constructor-arg name="modelNumber" value="${modelNumber}" />
+		<constructor-arg name="name" value="${name}" />
+		<constructor-arg name="isAirBags" value="${isAirBags}" />
+		<constructor-arg name="mileage" value="${mileage}" />
+	</bean>
+	
+	<context:property-placeholder location="classpath:car.properties"/>
 </beans>
